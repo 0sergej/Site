@@ -1,0 +1,65 @@
+/* Legend:
+    0. root;
+    1. header; 
+*/	
+
+/* 0. root */
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+}
+
+:root {
+	--color-light: hsl(214, 100%, 58%);
+	--color-dark: hsl(56, 70%, 8%);
+}
+
+/* 1. header */
+
+.header {
+	display: flex;
+	padding: 0.6rem 1rem 0 1rem;
+	background-color: var(--color-light);
+	align-items: center;
+}
+
+.header__nav {
+	flex-grow: 1;
+}
+
+.nav__list {
+	list-style: none;
+	display: flex;
+}
+
+.nav__link {
+	text-decoration: none;
+	margin-inline-start: 1rem;
+	color: white;
+	font-size: 0.8rem;
+}
+
+.nav__list li:nth-of-type(1) {
+	margin-left: auto;
+}
+
+.nav__list li:nth-of-type(5) {
+	margin-left: auto;
+	font-weight: bold;
+}
+
+.nav__list li:nth-of-type(6) {
+	font-weight: bold;
+}
