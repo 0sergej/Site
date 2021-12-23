@@ -1,7 +1,7 @@
 /* Legend:
     0. root;
     1. header; 
-*/	
+*/
 
 /* 0. root */
 
@@ -30,9 +30,13 @@ body {
 
 .header {
 	display: flex;
-	padding: 0.6rem 1rem 0 1rem;
+	padding: 0.5rem;
 	background-color: var(--color-light);
 	align-items: center;
+}
+
+.header__img--logo {
+	width: 5rem;
 }
 
 .header__nav {
