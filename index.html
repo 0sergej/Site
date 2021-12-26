@@ -8,12 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+
     <title>Document</title>
+    
+    <script src="JS/nav__open.js" defer></script>
+    <script src="JS/nav__header.js" defer></script>
+
 </head>
 <body>
     <header class="header">
         <img src="Images/Logo.png" alt="logo" class="header__img--logo">
-            <nav class="header__nav">
+        <h1 class="nav__open close"></h1>
+            <nav class="header__nav close">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="" class="nav__link">About</a></li>
@@ -27,9 +33,11 @@
     </header>
 
     <div class="hero">
-        <img src="" class="hero__img--background" alt="hero background">
-        <h1 class="hero__title">Game title</h1>
-        <p class="hero__text">Short explantion</p>
+        <img src="" class="hero__img--bg" alt="hero background">
+        <div class="hero__left">
+        <h1 class="hero__title">Welcome to Titan MOBA</h1>
+        <p class="hero__text">First Play To Earn Mobile MOBA</p>
+        </div>
     </div>
 
     <div class="about">
@@ -102,6 +110,5 @@
     </footer>
 
     <h1>Inspiration: <code>https://thetanarena.com/</code></h1>
-
 </body>
 </html>
