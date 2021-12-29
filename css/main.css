@@ -357,7 +357,7 @@ picture {
 	}
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 88rem) {
 	.hero__title {
 		font-size: 5rem;
 		line-height: 6.4rem;
