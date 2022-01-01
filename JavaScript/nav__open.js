@@ -1,4 +1,5 @@
-const navBtn = document.querySelector('.nav__open');
+const navBtn = document.querySelector('.nav__open--background');
+const navAdd = document.querySelector('.nav__open')
 const heroBtnRight = document.querySelector('.hero__btn--right');
 const heroBtnLeft = document.querySelector('.hero__btn--left')
 
@@ -8,16 +9,16 @@ navBtn.addEventListener('click', () =>
 {
     if (!navOpen)
     {
-        navBtn.classList.add('close');
-        navBtn.classList.remove('open');
+        navAdd.classList.add('close');
+        navAdd.classList.remove('open');
         heroBtnLeft.classList.remove('disabled');
         heroBtnRight.classList.remove('disabled');
         navOpen = true;
     }
     else
     {
-        navBtn.classList.remove('close');
-        navBtn.classList.add('open');
+        navAdd.classList.remove('close');
+        navAdd.classList.add('open');
         heroBtnLeft.classList.add('disabled');
         heroBtnRight.classList.add('disabled');
         navOpen = false

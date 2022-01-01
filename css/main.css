@@ -143,6 +143,17 @@ body {
     border-radius: 25px;
 }
 
+.nav__open--background {
+    position: absolute;
+    inset: -8px 0 0 -2px;
+
+    background-color: royalblue;
+    opacity: 50%;
+    width: 25px;
+    height: 21px;
+    z-index: 3;
+}
+
 .header__nav {
     flex-grow: 1;
     display: flex;
