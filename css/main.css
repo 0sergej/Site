@@ -397,14 +397,6 @@ li:nth-of-type(4) {
     grid-template-rows: 4rem 50%;
     grid-template-columns: 60% 40%;
     align-items: center;
-    opacity: 0;
-    transform: translateX(-300px);
-    transition: ease-out 300ms;
-}
-
-.about__card--gameplay.visible{
-    opacity: 1;
-    transform: translateX(0px);
 }
 
 .card__img--gameplay {
@@ -427,20 +419,12 @@ li:nth-of-type(4) {
     display: none;
 }
 
-.about__card--skin{
+.about__card--skin {
     display: grid;
     gap: 5vw;
     grid-template-rows: 4rem 50%;
     grid-template-columns: 40% 60%;
     align-items: center;
-    opacity: 0;
-    transform: translateX(300px);
-    transition: ease-out 300ms;
-}
-
-.about__card--skin.visible{
-    opacity: 1;
-    transform: translateX(0px);
 }
 
 .card__img--skin {
@@ -470,14 +454,6 @@ li:nth-of-type(4) {
     grid-template-rows: 4rem 50%;
     grid-template-columns: 60% 40%;
     align-items: center;
-    opacity: 0;
-    transform: translateX(-300px);
-    transition: ease-out 300ms;
-}
-
-.about__card--token.visible{
-    opacity: 1;
-    transform: translateX(0px);
 }
 
 .card__img--token {
@@ -501,7 +477,7 @@ li:nth-of-type(4) {
     display: none;
 }
 
-.card__link--token{
+.card__link--token {
     font-weight: 600;
 }
 
@@ -527,6 +503,10 @@ li:nth-of-type(4) {
 }
 
 @media (max-width: 40rem) {
+    body {
+        overflow-x: hidden;
+    }
+
     .header {
         padding: 0.5rem;
     }
@@ -636,5 +616,36 @@ li:nth-of-type(4) {
 
     .hero--background {
         grid-column: 2/3;
+    }
+    .about__card--gameplay {
+        opacity: 0;
+        transform: translateX(-300px);
+        transition: ease-out 300ms;
+    }
+
+    .about__card--gameplay.visible {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .about__card--skin {
+        opacity: 0;
+        transform: translateX(300px);
+        transition: ease-out 300ms;
+    }
+
+    .about__card--skin.visible {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    .about__card--token {
+        opacity: 0;
+        transform: translateX(-300px);
+        transition: ease-out 300ms;
+    }
+
+    .about__card--token.visible {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
