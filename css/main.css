@@ -92,7 +92,6 @@ select {
 html,
 body {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 500;
 }
 
 /* 1. Header */
@@ -502,7 +501,11 @@ li:nth-of-type(4) {
     display: none;
 }
 
-.about__link--token:hover {
+.card__link--token{
+    font-weight: 600;
+}
+
+.card__link--token:hover {
     text-decoration: underline;
     cursor: pointer;
 }
