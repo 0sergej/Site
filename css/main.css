@@ -2,9 +2,10 @@
     0. root;
     1. Header;
     2. Hero;
-    3. Social
-    4. About
-	5. media.
+    3. Social;
+    4. About;
+    5. Token
+	6. media.
 */
 
 /* 0. root */
@@ -44,7 +45,6 @@ html:focus-within {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
     overflow-x: hidden;
 }
 
@@ -87,6 +87,9 @@ select {
 :root {
     --color-light: hsl(208, 100%, 49%);
     --color-dark: hsl(56, 70%, 8%);
+    --font-size-h2: clamp(1.6rem, 4vw, 5.4rem);
+    --font-size-p: clamp(1.1rem, 1.9vw, 2.4rem);
+    --line-height-p: clamp(1.7rem, 4vw, 5rem);
 }
 
 html,
@@ -379,14 +382,14 @@ li:nth-of-type(4) {
     grid-template-rows: 20% repeat(3, 1fr);
     gap: 5vh;
 
-    margin: 10vh 10vw 0 5vw;
+    margin: 10vh 10vw 10vw 5vw;
     text-align: center;
     align-items: center;
     color: var(--color-light);
 }
 
 .about__title {
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(2.3rem, 4.5vw, 4rem);
     line-height: clamp(3rem, 7vw, 6rem);
     margin-inline: 2rem;
 }
@@ -404,14 +407,14 @@ li:nth-of-type(4) {
 }
 
 .card--title--gameplay {
-    font-size: clamp(1.6rem, 4vw, 5.4rem);
+    font-size: var(--font-size-h2);
     align-self: flex-end;
 }
 
 .card--text--gameplay {
     padding: 0rem 1rem 1rem 1rem;
-    font-size: clamp(1rem, 1.9vw, 2.4rem);
-    line-height: clamp(1rem, 3.5vw, 5rem);
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
     align-self: baseline;
 }
 
@@ -433,14 +436,14 @@ li:nth-of-type(4) {
 }
 
 .card--title--skin {
-    font-size: clamp(1.6rem, 4vw, 5.4rem);
+    font-size: var(--font-size-h2);
     align-self: flex-end;
 }
 
 .card--text--skin {
     padding: 0rem 1rem 1rem 1rem;
-    font-size: clamp(1rem, 1.9vw, 2.4rem);
-    line-height: clamp(1rem, 3.5vw, 5rem);
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
     align-self: baseline;
 }
 
@@ -462,14 +465,14 @@ li:nth-of-type(4) {
 }
 
 .card--title--token {
-    font-size: clamp(1.6rem, 4vw, 5.4rem);
+    font-size: var(--font-size-h2);
     align-self: flex-end;
 }
 
 .card--text--token {
     padding: 0rem 1rem 1rem 1rem;
-    font-size: clamp(1rem, 1.9vw, 2.4rem);
-    line-height: clamp(1rem, 3.5vw, 5rem);
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
     align-self: baseline;
 }
 
@@ -486,7 +489,98 @@ li:nth-of-type(4) {
     cursor: pointer;
 }
 
-/* 5. media */
+/* 5. Token */
+
+.token{    
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color:var(--color-light);
+    color:white;
+    padding:10vw 3rem 5vw 3rem;
+}
+
+.token__h1--in{
+    text-transform: uppercase;
+    font-size: clamp(2.3rem, 5vw, 6rem);
+    line-height: 4rem;
+    margin-bottom: 7vw;
+}
+
+.token__img--token{
+    transform: scale(1.3);
+}
+
+.token__div--in{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.token__h2--in{
+    font-size: var(--font-size-h2);
+}
+
+.token__p--in{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}
+
+.token__div--out{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.token__img--out
+
+.token__p--out{
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}
+
+.token__span--out{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.token__div--titan{
+    display:flex;
+    flex-direction: row;
+    gap:10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.token__div--skin{
+    display:flex;
+    flex-direction: row;
+    gap:10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.token__div--special-power{
+    display:flex;
+    flex-direction: row;
+    gap:10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.token__img--out{
+    max-width:40%;
+}
+
+.token__p--out{
+    font-size: var(--font-size-h2);
+    line-height: 3rem;
+}
+
+/* 6. media */
 
 @media (min-width: 50rem) {
     .card--text--gameplay--part2 {
@@ -617,6 +711,11 @@ li:nth-of-type(4) {
     .hero--background {
         grid-column: 2/3;
     }
+
+    .about{
+        margin: 10vh 10vw 15vw 5vw;
+    }
+    
     .about__card--gameplay {
         opacity: 0;
         transform: translateX(-300px);
