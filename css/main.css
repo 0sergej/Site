@@ -584,17 +584,76 @@ li:nth-of-type(4) {
 
 /* 6. Gem */
 
-.gem{
+.gem {
     background-color: white;
     color: var(--color-light);
-    padding: 6vw 5vw;
+    margin: 6vw 0;
     text-align: center;
 }
 
-.gem__h1--white{
+.gem__h1--white {
     font-size: clamp(4rem, 6.5vw, 7rem);
 }
 
+.gem__img--white {
+    max-width: 80%;
+    display: inline;
+}
+
+.gem__h2--white {
+    font-size: var(--font-size-h2);
+    line-height: clamp(2.5rem, 6vw, 7.5rem);
+    padding-inline: 4rem;
+}
+
+.gem__p--white {
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    padding: 2rem 5rem;
+}
+
+.gem__div--blue {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4vw;
+
+    background-color: var(--color-light);
+    color: white;
+    padding: 4vw 5vw 0 5vw;
+    text-align: left;
+}
+
+.blue__div--gem-token {
+    display: none;
+}
+
+.gem__line--blue {
+    background-color: transparent;
+    height: 1px;
+    width: 60%;
+    border: 2px dashed white;
+}
+
+.gem__h2--blue-100x {
+    font-size: var(--font-size-h2);
+    line-height: clamp(2.5rem, 6vw, 7.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.gem__p--blue {
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}
+
+.gem__p--blue > a {
+    text-decoration: none;
+    color: white;
+}
+
+.gem__p--blue > a:hover {
+    text-decoration: underline;
+}
 
 /* 6. media */
 
@@ -832,5 +891,19 @@ li:nth-of-type(4) {
     .token__div--special-power {
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    /* Gem */
+
+    .gem__img--white {
+        max-width: 40%;
+    }
+
+    .blue__div--gem-token {
+        display: block;
+    }
+
+    .gem__h2--blue-100x {
+        display: none;
     }
 }
