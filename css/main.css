@@ -687,10 +687,11 @@ li:nth-of-type(4) {
 /* 6. Roadmap */
 
 .roadmap {
-    color: var(--color-light);
     display: flex;
     flex-direction: column;
     gap: 15vw;
+
+    color: var(--color-light);
 }
 
 .roadmap__h1--title {
@@ -702,14 +703,15 @@ li:nth-of-type(4) {
 
 .roadmap__div--social-push {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 1fr;
     grid-template-rows: 30% 1fr;
     gap: 3vw;
+
     align-items: center;
     text-align: center;
 }
 
-.roadmap__a--social-push{
+.roadmap__a--social-push {
     margin: 50% 0 0 34%;
     align-self: baseline;
 }
@@ -733,43 +735,43 @@ li:nth-of-type(4) {
 }
 
 .roadmap__p--social-push-q3 {
-    position:relative;
+    position: relative;
 
     align-self: center;
     text-align: center;
-    margin:10% 0 0 0;
+    margin: 10% 0 0 0;
 
     font-size: var(--font-size-p);
     font-weight: 600;
 }
 
 .roadmap__p--social-push-q3::before {
-    content:'';
+    content: '';
 
     position: absolute;
-    bottom:130%;
-    
-    left:27.5%;
+    bottom: 130%;
+
+    left: 27.5%;
     right: 27.5%;
 
-    border:1px solid var(--color-light);
+    border: 1px solid var(--color-light);
 }
 
 .roadmap__div--launch {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 1fr;
     grid-template-rows: 30% 1fr;
     gap: 3vw;
 
-    background-color:var(--color-light);
-    color:white;
+    background-color: var(--color-light);
+    color: white;
     align-items: center;
     text-align: center;
 }
 
-.roadmap__a--launch{
+.roadmap__a--launch {
     grid-column: 1/2;
-    grid-row:1/2;
+    grid-row: 1/2;
 
     align-self: baseline;
     margin: 40% 0 0 27.5%;
@@ -794,37 +796,37 @@ li:nth-of-type(4) {
 }
 
 .roadmap__p--launch-q4 {
-    position:relative;
+    position: relative;
 
     align-self: center;
     text-align: center;
-    margin:10% 0 0 0;
+    margin: 10% 0 0 0;
 
     font-size: var(--font-size-p);
     font-weight: 600;
 }
 
 .roadmap__p--launch-q4::before {
-    content:'';
+    content: '';
 
     position: absolute;
-    bottom:130%;
-    
-    left:27.5%;
+    bottom: 130%;
+
+    left: 27.5%;
     right: 27.5%;
 
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 .roadmap__div--coin {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 1fr;
     grid-template-rows: 30% 1fr;
     align-items: center;
     text-align: center;
 }
 
-.roadmap__a--coin{
+.roadmap__a--coin {
     margin: 25% 0 0 10%;
     align-self: baseline;
 }
@@ -848,28 +850,27 @@ li:nth-of-type(4) {
 }
 
 .roadmap__p--coin-q1 {
-    position:relative;
+    position: relative;
 
     align-self: center;
     text-align: center;
-    margin:10% 0 0 0;
+    margin: 10% 0 0 0;
 
     font-size: var(--font-size-p);
     font-size: 600;
 }
 
 .roadmap__p--coin-q1::before {
-    content:'';
+    content: '';
 
     position: absolute;
-    bottom:130%;
-    
-    left:27.5%;
+    bottom: 130%;
+
+    left: 27.5%;
     right: 27.5%;
 
-    border:1px solid var(--color-light);
+    border: 1px solid var(--color-light);
 }
-
 
 /* 7. Footer */
 
