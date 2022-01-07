@@ -111,7 +111,7 @@ body {
 }
 
 .header__img--logo {
-    width: 5rem;
+    width: 15vh;
 }
 
 .nav__open {
@@ -631,7 +631,7 @@ li:nth-of-type(4) {
 .gem__p--white {
     font-size: var(--font-size-p);
     line-height: var(--line-height-p);
-    padding: 2rem 5rem;
+    padding: 3rem 5rem;
 }
 
 .gem__div--blue {
@@ -686,10 +686,14 @@ li:nth-of-type(4) {
 
 /* 6. Roadmap */
 
+.roadmap > div > h2 {
+    padding-inline: 1rem;
+}
+
 .roadmap {
     display: flex;
     flex-direction: column;
-    gap: 15vw;
+    gap: 10vw;
 
     color: var(--color-light);
 }
@@ -701,175 +705,198 @@ li:nth-of-type(4) {
     margin: 3rem 0 -2rem 0;
 }
 
-.roadmap__div--social-push {
+.roadmap__div--social {
     display: grid;
-    grid-template-columns: 60% 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 50% 1fr;
     gap: 3vw;
 
+    background-color: white;
+    color: var(--color-light);
     align-items: center;
     text-align: center;
 }
 
-.roadmap__a--social-push {
-    margin: 50% 0 0 34%;
-    align-self: baseline;
-}
-
-.roadmap__img--social-push {
-    max-width: 50%;
-}
-
-.roadmap__h2--social-push {
+.roadmap__h2--social {
     font-size: var(--font-size-h2);
-    align-self: flex-end;
 }
 
-.roadmap__p--social-push {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-inline: 3rem;
+.roadmap__link--social {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
 
+.roadmap__img--social {
+    width: 15vh;
+    align-items: center;
+    display: inline;
+}
+
+.roadmap__p--social {
     font-size: var(--font-size-p);
     line-height: var(--line-height-p);
+    padding-inline: 10%;
 }
 
-.roadmap__p--social-push-q3 {
-    position: relative;
-
-    align-self: center;
-    text-align: center;
-    margin: 10% 0 0 0;
-
+.roadmap__p--q3 {
     font-size: var(--font-size-p);
     font-weight: 600;
-}
-
-.roadmap__p--social-push-q3::before {
-    content: '';
-
-    position: absolute;
-    bottom: 130%;
-
-    left: 27.5%;
-    right: 27.5%;
-
-    border: 1px solid var(--color-light);
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 .roadmap__div--launch {
     display: grid;
     grid-template-columns: 40% 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-rows: 50% 1fr;
     gap: 3vw;
 
     background-color: var(--color-light);
     color: white;
     align-items: center;
     text-align: center;
+
+    padding: 1.5rem 0 2rem 0;
 }
 
-.roadmap__a--launch {
+.roadmap__h2--launch {
+    font-size: var(--font-size-h2);
+}
+
+.roadmap__link--launch {
     grid-column: 1/2;
     grid-row: 1/2;
-
-    align-self: baseline;
-    margin: 40% 0 0 27.5%;
 }
 
 .roadmap__img--launch {
-    max-width: 60%;
-}
-.roadmap__h2--launch {
-    font-size: var(--font-size-h2);
-    align-self: flex-end;
+    width: 25vh;
+    display: inline;
 }
 
 .roadmap__p--launch {
-    grid-column: 2/3;
-    grid-row: 2/3;
-
-    margin-inline: 3rem;
-
     font-size: var(--font-size-p);
     line-height: var(--line-height-p);
+    padding: 0 10% 2rem 10%;
 }
 
-.roadmap__p--launch-q4 {
-    position: relative;
-
-    align-self: center;
-    text-align: center;
-    margin: 10% 0 0 0;
-
+.roadmap__p--q4 {
     font-size: var(--font-size-p);
     font-weight: 600;
-}
-
-.roadmap__p--launch-q4::before {
-    content: '';
-
-    position: absolute;
-    bottom: 130%;
-
-    left: 27.5%;
-    right: 27.5%;
-
-    border: 1px solid white;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 .roadmap__div--coin {
     display: grid;
-    grid-template-columns: 60% 1fr;
-    grid-template-rows: 30% 1fr;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 70% 30%;
+
+    background-color: white;
+    color: var(--color-light);
     align-items: center;
     text-align: center;
 }
 
-.roadmap__a--coin {
-    margin: 25% 0 0 10%;
-    align-self: baseline;
+.roadmap__h2--coin {
+    font-size: var(--font-size-h2);
+}
+
+.roadmap__link--coin {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .roadmap__img--coin {
     max-width: 90%;
-}
-
-.roadmap__h2--coin {
-    font-size: var(--font-size-h2);
-    align-self: flex-end;
+    align-items: center;
+    display: inline;
 }
 
 .roadmap__p--coin {
-    grid-column: 1/2;
-    grid-row: 2/3;
-
-    margin-inline: 3rem;
     font-size: var(--font-size-p);
     line-height: var(--line-height-p);
+    padding: 2.5rem 10% 0 10%;
 }
 
-.roadmap__p--coin-q1 {
-    position: relative;
+.roadmap__p--q1 {
+    font-size: var(--font-size-p);
+    font-weight: 600;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 
-    align-self: center;
+.roadmap__div--content {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 50% 1fr;
+    gap: 3vw;
+
+    background-color: var(--color-light);
+    color: white;
+    align-items: center;
     text-align: center;
-    margin: 10% 0 0 0;
+
+    padding: 1.5rem 0 2rem 0;
+    margin-top: 3rem;
+}
+
+.roadmap__h2--content {
+    font-size: var(--font-size-h2);
+}
+
+.roadmap__link--content {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.roadmap__img--content {
+    max-width: 60%;
+    display: inline;
+    margin-top: 10%;
+}
+
+.roadmap__p--content {
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+    padding: 0 10% 2rem 10%;
+}
+
+.roadmap__p--q2 {
+    font-size: var(--font-size-p);
+    font-weight: 600;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.roadmap__div--moon{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    gap:3vw;
+
+    text-align:center;
+    align-items: center;
+    color: var(--color-dark);
+}
+
+.roadmap__h2--moon{
+    font-size: var(--font-size-h2);
+}
+
+.roadmap__link--moon {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.roadmap__img--moon {
+    max-width: 60%;
+    display: inline;
+    margin-top: 10%;
+}
+
+.roadmap__p--moon{
+    grid-row: 2/3;
 
     font-size: var(--font-size-p);
-    font-size: 600;
-}
-
-.roadmap__p--coin-q1::before {
-    content: '';
-
-    position: absolute;
-    bottom: 130%;
-
-    left: 27.5%;
-    right: 27.5%;
-
-    border: 1px solid var(--color-light);
 }
 
 /* 7. Footer */
@@ -1169,5 +1196,15 @@ li:nth-of-type(4) {
 
     .gem__h2--blue-100x {
         display: none;
+    }
+
+    /* Roadmap */
+
+    .roadmap__p--launch {
+        padding-inline: 0 10%;
+    }
+
+    .roadmap__div--content {
+        margin-top: 0;
     }
 }
