@@ -1,6 +1,6 @@
 const headerNav = document.querySelector('.header__nav');
 
-let headerNavOpen = false;
+let headerNavOpen = true;
 
 navBtn.addEventListener('click', () =>
 {

@@ -114,9 +114,18 @@ body {
     width: 15vh;
 }
 
-.nav__open {
-    position: relative;
-    right: 10%;
+.scroll{
+    overflow-y: visible;
+}
+
+.scroll--off{
+    overflow-y: hidden;
+}
+
+.nav__open{
+    position:sticky;
+    left: 85vw;
+    z-index: 100;
 
     display: none;
 
@@ -124,6 +133,7 @@ body {
     height: 4px;
     background-color: white;
     border-radius: 25px;
+    margin: 0 15vw 0 auto;
 }
 
 .nav__open::before {
@@ -134,7 +144,7 @@ body {
     width: 25px;
     height: 4px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .nav__open::after {
@@ -153,7 +163,6 @@ body {
     position: absolute;
     inset: -8px 0 0 -2px;
 
-    opacity: 50%;
     width: 25px;
     height: 21px;
     z-index: 3;
@@ -999,6 +1008,7 @@ body {
         align-self: center;
         text-transform: uppercase;
     }
+
     .nav__open {
         position: absolute;
 
@@ -1034,7 +1044,7 @@ body {
         transition: ease-out 200ms;
     }
 
-    .nav__open.close::before {
+    .nav__open::before {
         transform: rotate(0) translate(-2px, 7px);
         transition: ease-out 200ms;
     }
@@ -1074,6 +1084,10 @@ body {
 
     .nav__item:first-child {
         margin-left: auto !important;
+    }
+
+    .nav__list{
+        gap: 5vw;
     }
 
     /* hero */

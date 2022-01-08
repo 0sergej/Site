@@ -14,6 +14,7 @@
         <title>Titan</title>
 
         <script src="JavaScript/nav__open.js" defer></script>
+        <script src="JavaScript/nav__list.js" defer></script>
         <script src="JavaScript/nav__header.js" defer></script>
         <script src="JavaScript/social.js" defer></script>
         <script src="JavaScript/card--gameplay.js" defer></script>
@@ -22,19 +23,21 @@
 
     </head>
 
-    <body>
+    <body class="scroll">
         <header class="header">
             <img src="Images/Logo.svg" alt="logo" class="header__img--logo">
 
-            <h1 class="nav__open close"><span class="nav__open--background"></span></h1>
+            <span class="nav__open close"><span class="nav__open--background"></span></span>
             <nav class="header__nav close">
+
+
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#token" class="nav__link">Token</a></li>
-                    <li class="nav__item"><a href="#gem" class="nav__link">Gem</a></li>
-                    <li class="nav__item"><a href="#roadmap" class="nav__link">Roadmap</a></li>
-                    <li class="nav__item"><a href="#log-in" class="nav__link">Log in</a></li>
-                    <li class="nav__item"><a href="#sign-in" class="nav__link">Sign in</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link nav__link--about">About</a></li>
+                    <li class="nav__item"><a href="#token" class="nav__link nav__link--token">Token</a></li>
+                    <li class="nav__item"><a href="#gem" class="nav__link nav__link--gem">Gem</a></li>
+                    <li class="nav__item"><a href="#roadmap" class="nav__link nav__link--roadmap">Roadmap</a></li>
+                    <li class="nav__item"><a href="#log-in" class="nav__link nav__link--log-in">Log in</a></li>
+                    <li class="nav__item"><a href="#sign-in" class="nav__link nav__link--sign-in">Sign in</a></li>
                 </ul>
             </nav>
             </img>
@@ -210,7 +213,8 @@
 
         <div class="footer">
             <ul class="footer__list">
-                <li class="footer__item"><a href="#" ><img src="Images/Logo.svg" alt="Logo" class="footer__img--logo"></a></li>
+                <li class="footer__item"><a href="#"><img src="Images/Logo.svg" alt="Logo"
+                            class="footer__img--logo"></a></li>
                 <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
                 <li class="footer__item"><a href="#token" class="footer__link">Token</a></li>
                 <li class="footer__item"><a href="#gem" class="footer__link">Gem</a></li>
