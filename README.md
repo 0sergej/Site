@@ -1,2 +1,3 @@
-# Site inspired by
- https://www.thetanarena.com
+# Titan-MOBA
+
+Learning JS basics
